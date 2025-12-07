@@ -20,12 +20,12 @@ func main() {
 		panic(err)
 	}
 
-	playbackInfo, err := liveDetail.GetLivePlayback()
+	playback, err := liveDetail.GetLivePlayback()
 	if err != nil {
 		panic(err)
 	}
 
-	fmt.Println("HLS URL:", playbackInfo.GetHLSPath())
+	fmt.Println("HLS URL:", playback.GetHLSPath())
 }
 ```
 
